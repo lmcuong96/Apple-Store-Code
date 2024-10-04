@@ -1,0 +1,35 @@
+.mymodal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  outline: none;
+  /* animation: modalShow 0.5s linear; */
+  width: 60%;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(56, 55, 55, 0.342); /* Màu nền đen với độ trong suốt */
+  backdrop-filter: blur(2px); /* Hiệu ứng làm mờ */
+  z-index: 999;
+}
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
